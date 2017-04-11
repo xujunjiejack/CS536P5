@@ -1,0 +1,24 @@
+int emptyFunction() {
+    return 1;
+}
+
+struct S{
+    int a;
+};
+
+int main() {
+    struct S s;
+    cout << emptyFunction(->int);
+    cout << S(struct);
+    cout << s(S);
+    return 1;
+}
+
+int main2() {
+    int a;
+    bool b;
+    a(int) = true;
+    b(bool) = true;
+    return b(bool);
+}
+
