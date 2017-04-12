@@ -58,6 +58,12 @@ test:
 	java P5 test.moo test.out
 
 ###
+# testerr
+#
+testerr:
+	java P5 typeErrors.moo typeErrors.out
+
+###
 # clean
 ###
 clean:
