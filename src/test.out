@@ -1,4 +1,16 @@
+void voidFunction() {
+    bool fool;
+}
+
 int emptyFunction() {
+    return 1;
+}
+
+int functionWith2Arg(int a, int b) {
+    return (a(int) + b(int));
+}
+
+int functionWith3Arg(int a, int b, int c) {
     return 1;
 }
 
@@ -21,13 +33,36 @@ int foo2() {
 int main() {
     struct S s;
     struct S s2;
+    int num;
+    bool boolean;
     cout << emptyFunction(->int);
     cout << S(struct);
     cout << s(S);
+    cout << voidFunction(->void)();
+    cin >> voidFunction(->void);
+    cin >> S(struct);
+    cin >> s(S);
+    s(S)();
+    voidFunction(->void)(num(int), boolean(bool));
+    functionWith2Arg(int,int->int)(num(int));
+    functionWith2Arg(int,int->int)(num(int), boolean(bool));
+    functionWith3Arg(int,int,int->int)(num(int), boolean(bool), num(int));
     foo1(->int) = foo2(->int);
     S(struct) = S2(struct);
     s(S) = s2(S);
     return 1;
+}
+
+int missingReturnValue() {
+    return;
+}
+
+bool missingReturnValueBool() {
+    return;
+}
+
+void voidFunctionWrong() {
+    return (1 + 1);
 }
 
 int main2() {
